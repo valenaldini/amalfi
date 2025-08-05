@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amalfi Outfit</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&display=swap" rel="stylesheet">
+    <!--bootstrap, hoja de estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--css, pisa al bootstrap-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     <header>  <!--logo, titulo y menu-->
-        <img src="/amalfi/assets/img/logo.jpg" alt="Logo de Amalfi" class="logo">
+        <img src="./amalfi/assets/img/logo.jpg" alt="Logo de Amalfi" class="logo">
         <h1>Amalfi Outfit</h1>  
         <nav><ul class="nav">
             <li><a href="/amalfi/assets/pages/mujeres.html">Mujeres</a></li>
@@ -25,11 +28,33 @@
 
     <main class="flex"> <!-- carrusel img y parrafo-->
         <!--<h3 class="class">ultima moda</h3> -->
-         <img src="./amalfi/assets/img/ropa de hombre.webp" alt="ropa de hombre" title="Ropa de Hombre" class="fotoprincipal">
+        <!-- <img src="./amalfi/assets/img/ropa de hombre.webp" alt="ropa de hombre" title="Ropa de Hombre" class="fotoprincipal">-->
        <!-- <h2 id="id" class="class">lo que buscas esta aca!</h2> -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum excepturi fugit beatae enim magni dignissimos soluta eius veritatis officia, voluptatibus harum saepe adipisci animi nam necessitatibus nemo deserunt reiciendis doloribus.</p>
        <!-- <section class="caja a">caja 1</section>
         <section class="caja b">caja 2</section> -->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/ropa de hombre.webp" class="d-block img-carousel" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/ropa de mujer.jpg" class="d-block img-carousel" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/ropa kids.avif" class="d-block img-carousel" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <footer> <!-- subtitulo , subtitulo 2 y imagenes de wsp, ig, fb y tw-->
@@ -43,5 +68,7 @@
             <li><a href="https://www.tiktok.com/es/" target="_blank"> <img src="./assets/img/tktk.webp" alt="Tik Tok" class="tiktok"></a></li>
         </ul></nav>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
